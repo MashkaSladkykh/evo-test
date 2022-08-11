@@ -1,12 +1,15 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import "./scss/index.scss";
+
+import Wallet from "./components/Wallet";
 
 function App() {
   return (
     <div className="App">
-      <h1>My wallet</h1>
+      <h1 className="title">My wallet</h1>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Wallet />} />
         <Route path="about" element={<About />} />
       </Routes>
     </div>
@@ -15,19 +18,7 @@ function App() {
 
 export default App;
 
-function Home() {
-  return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
+
 
 function About() {
   return (
