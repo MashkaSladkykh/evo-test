@@ -16,6 +16,19 @@ const CreateCard = ({items, addCard, enterCard, setEnterCard}) => {
       id: Math.round(Math.random() * 100),
       value: enterCard,
     }
+    fetch(`https://lookup.binlist.net/${enterCard}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        if (!data) {
+          return (
+            <div>Error</div>
+          )
+        }
+        console.log(data);
+      });
+
     setEnterCard('');
     addCard(newCard);
   }

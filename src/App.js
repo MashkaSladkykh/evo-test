@@ -5,6 +5,7 @@ import "./scss/index.scss";
 
 import Wallet from "./components/Wallet";
 import CreateCard from "./components/Cards/CreateCard";
+import Cash from "./components/Cash";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Wallet/>}/>
         {/* <Route path=":movieId" element={<Movie/>}/> */}
         <Route path="/create-card" element={<CreateCard/>}/>
-        {/* <Route path="/create-cash" element={<CreateCash/>}/> */}
+        <Route path="/create-cash" element={<Cash/>}/>
         {/* <Route path="create element={<CreateCard/>}/>
         <Route path="cards" element={<Cards/>}>
           <Route index element={<Card/>}/>
