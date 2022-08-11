@@ -7,7 +7,7 @@ import { counter } from "./counter/reducer";
 
 const rootReducer = combineReducers({
 cards,
-cash,
+cash, 
 counter,
 });
 

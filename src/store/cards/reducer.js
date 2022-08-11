@@ -18,7 +18,7 @@ export const cards = (state = initialState, action) => {
         items: [...state.items, action.payload]
       };
     case REMOVE_CARD:
-      return {
+      return { 
         ...state,
         items: state.items.filter(card => action.payload !== card.id),
       };

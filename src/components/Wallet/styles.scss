@@ -1,1 +1,48 @@
 @import "../../scss/variables.scss";
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & li {
+        font-size: 23px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+}
+
+.common {
+    width: 40%;
+}
+
+.cash, .cards {
+    & li {
+        font-size: 18px;
+        margin-left: 10px;
+        & button {
+            margin-left: 40px;
+        }
+    }
+
+}
+
+.cards-holder {
+    width: 60%;
+    &__btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+    }
+    & li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

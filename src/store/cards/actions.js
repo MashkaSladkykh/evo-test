@@ -13,4 +13,4 @@ export const removeCard = payload => ({
 export const setEnterCard = payload => ({
   type: SET_ENTER_CARD,
   payload,
-})
+}) 

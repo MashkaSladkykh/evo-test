@@ -1,12 +1,13 @@
 import React from "react";
 
-import EmptyList from "../EmptyList";
-import EnterCard from "./EnterCard";
-import List from "./List";
+import EmptyList from "../../EmptyList";
+import EnterCard from "../CreateCard/EnterCard";
+import List from "../List";
 
 import "./styles.scss";
 
-const CardsComponent = ({ enterCard, items, isCardsEmpty, onEnterCard, onAddCard }) => (
+const CardsComponent = ({ items, enterCard, isCardsEmpty, onEnterCard, onAddCard }) => {
+    return (
   <div className="cards">
     <EnterCard
       value={enterCard}
@@ -22,6 +23,6 @@ const CardsComponent = ({ enterCard, items, isCardsEmpty, onEnterCard, onAddCard
       )
     }
   </div>
-)
+)}
 
 export default CardsComponent;

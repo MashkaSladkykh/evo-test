@@ -11,7 +11,6 @@ body {
     border-radius: 10px;
     max-width: 100%;
     min-height: 90vh;
-    display: flex;
 }
 
 .container {
@@ -21,6 +20,116 @@ body {
 }
 
 .title {
-    margin: 20px 20px 60px;
+    margin: 20px;
     color: $light-gray;
+}
+
+body {
+    line-height: 1.563;
+    color: $dark-gray;
+    caret-color: $dark-gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 3.052rem;
+    letter-spacing: -0.15rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.441rem;
+    letter-spacing: -0.12rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.953rem;
+    letter-spacing: -0.09rem;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 1.563rem;
+}
+
+label {
+    font-weight: bold;
+    display: flex;
+}
+
+input{
+    padding: 0.65rem 0.5rem;
+    font-size: 1rem;
+    border: 2px solid $white-gray;
+    background-color: $white;
+    color: $dark-gray;
+    border-radius: 10px;
+    appearance: none;
+    width: 300px;
+    margin: 0 20px 20px 0;
+    display: block;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--focus-ring-color);
+}
+
+input:invalid {
+    border: 2px solid #ff7d87;
+    box-shadow: none;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: $light-gray;
+    border: 2px solid $light-gray;
+    color: $white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    line-height: initial;
+    transition: background-color 200ms ease-in-out, border 200ms ease-in-out,
+        transform 200ms ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    cursor: pointer;
+    background-color: $dark-gray;
+}
+
+button:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="button"]:focus-visible {
+    border-color: var(--focus-ring-color);
+    outline: none;
+}
+
+.error {
+    color: $red;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 1rem;
 }

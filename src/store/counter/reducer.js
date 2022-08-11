@@ -10,7 +10,7 @@ export const counter = (state = initialState, action) => {
     case SUM:
       return {
         ...state,
-        totalAmount: amounts.map(item => item.amount).reduce((prev, next) => prev + next),
+        totalAmount: state.amounts.map(item => item.amount).reduce((prev, next) => prev + next),
       }
     default:
       return state;

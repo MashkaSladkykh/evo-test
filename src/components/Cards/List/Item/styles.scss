@@ -1,0 +1,27 @@
+@import "../../../../scss/variables.scss";
+.card {
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: $red;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__remove{
+        background-color: transparent;
+        font-size: 30px;
+        border: 1px solid gray;
+        padding: 3px;
+        border-radius: 5px;
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(255, 192, 203, 0.557);
+            color: $white;
+            border-color: $white;
+        }
+    }
+
+}
